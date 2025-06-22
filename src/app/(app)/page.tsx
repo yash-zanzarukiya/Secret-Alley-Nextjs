@@ -146,7 +146,7 @@ function LandingPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Enable Feedback Reception</h3>
               <p className="text-muted-foreground">
-                Turn on "Accepting messages" to start receiving feedback.
+                Turn on &quot;Accepting messages&quot; to start receiving feedback.
               </p>
             </div>
 
@@ -190,8 +190,8 @@ function LandingPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Secret Alley helped me collect honest feedback from my team. The anonymity
-                  feature encouraged everyone to share their true thoughts."
+                  &quot;Secret Alley helped me collect honest feedback from my team. The anonymity
+                  feature encouraged everyone to share their true thoughts.&quot;
                 </p>
                 <div className="font-semibold">Team Leader</div>
               </CardContent>
@@ -205,8 +205,8 @@ function LandingPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "As a content creator, this platform helps me understand what my audience really
-                  thinks. The dashboard is incredibly user-friendly!"
+                  &quot;As a content creator, this platform helps me understand what my audience really
+                  thinks. The dashboard is incredibly user-friendly!&quot;
                 </p>
                 <div className="font-semibold">Content Creator</div>
               </CardContent>
@@ -220,8 +220,8 @@ function LandingPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Perfect for collecting customer feedback. The anonymity ensures we get genuine
-                  responses, and the interface makes management easy."
+                  &quot;Perfect for collecting customer feedback. The anonymity ensures we get genuine
+                  responses, and the interface makes management easy.&quot;
                 </p>
                 <div className="font-semibold">Business Owner</div>
               </CardContent>
