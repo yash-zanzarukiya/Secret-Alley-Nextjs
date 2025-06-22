@@ -37,13 +37,14 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: "400", variable: "--font
 function SignUpPage() {
   const router = useRouter();
   const { toast } = useToast();
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
   const [isUsernameAvailable, setIsUsernameAvailable] = useState(true);
   const [isUsernameChecking, setIsUsernameChecking] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
-
   const [debouncedUsername, setDebouncedUsername] = useDebounceValue(username, 500);
 
   const form = useForm<z.infer<typeof signUpSchema>>({
@@ -65,7 +66,6 @@ function SignUpPage() {
         setIsUsernameAvailable(response.data.data.isAvailable);
       } catch (error) {
         const axiosError = error as AxiosError<APIResponse>;
-        console.error(error);
         setUsernameMessage(axiosError.response?.data?.message ?? "Error checking username");
         setIsUsernameAvailable(axiosError.response?.data?.data.isAvailable);
       } finally {
